@@ -1,6 +1,6 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 140   // 10
-#define ZMK_BEHAVIOR_CORE_sensor_rotate compatible = "zmk,behavior-sensor-rotate"; #binding-cells = <0>
+#define ZMK_BEHAVIOR_CORE_sensor_rotate compatible = "zmk,behavior-sensor-rotate"; #sensor-binding-cells = <0>
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
