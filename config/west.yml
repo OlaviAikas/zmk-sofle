@@ -8,6 +8,8 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
     - name: urob
       url-base: https://github.com/urob
+    - name: joelspadin
+      url-base: https://github.com/joelspadin
   #  - name: gpeye
   #    url-base: https://github.com/GPeye
   projects:
@@ -23,6 +25,9 @@ manifest:
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
+      revision: main
+    - name: zmk-locales
+      remote: joelspadin
       revision: main
   self:
     path: boards
