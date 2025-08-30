@@ -52,7 +52,7 @@ layers:
   - FI COMMA
   - FI DOT
   - FI COLON
-  - $$mdi:keyboard-space$$
+  - {t: game, h: toggle}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
