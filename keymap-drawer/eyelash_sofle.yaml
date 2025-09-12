@@ -93,20 +93,20 @@ layers:
   - FI LT
   - FI GT
   - {t: '$$mdi:transfer$$', type: trans}
-  - ACUTE
+  - FI ACUTE
   - FI GRAVE
   - FI UMLAUT
   - FI MU
   - FI ONE HALF
   - $$mdi:arrow-left-bold$$
-  - FI BLSH
+  - FI BSLH
   - FI FSLH
   - FI LPAR
   - FI RPAR
   - FI PLUS
   - FI EQUAL
   - {t: '$$mdi:transfer$$', type: trans}
-  - SECTION
+  - FI SECTION
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
