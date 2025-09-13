@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80   // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 70   // 10
 #define ZMK_BEHAVIOR_CORE_sensor_rotate compatible = "zmk,behavior-sensor-rotate"; #sensor-binding-cells = <0>
 
 #include <input/processors.dtsi>
@@ -42,60 +42,60 @@ ZMK_BEHAVIOR(
 
 ZMK_LAYER(alpha,
     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                                    ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-            &kp ESC     &kp N1        &kp N2        &kp N3       &kp N4         &kp N5                      &mmv MOVE_UP                            &kp N6         &kp N7       &kp N8        &kp N9        &kp N0     &kp BACKSPACE
+            &kp ESC     &kp N1        &kp N2        &kp N3       &kp N4         &kp N5                      &kp UP_ARROW                            &kp N6         &kp N7       &kp N8        &kp N9        &kp N0     &kp BACKSPACE
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-            &kp TAB     &kp FI_Q      &kp FI_W      &kp FI_E     &kp FI_R       &kp FI_T                    &mmv MOVE_DOWN                         &kp FI_Y      &kp FI_U      &kp FI_I      &kp FI_O      &kp FI_P     &kp FI_A_RING
+            &kp TAB     &kp FI_Q      &kp FI_W      &kp FI_E     &kp FI_R       &kp FI_T                    &kp DOWN_ARROW                         &kp FI_Y      &kp FI_U      &kp FI_I      &kp FI_O      &kp FI_P     &kp FI_A_RING
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-            &kp CAPS    &kp FI_A      &kp FI_S      &kp FI_D     &kp FI_F       &kp FI_G                    &mmv MOVE_LEFT                         &kp FI_H      &kp FI_J      &kp FI_K      &kp FI_L    &kp FI_O_UMLAUT &kp FI_A_UMLAUT
+            &kp CAPS    &kp FI_A      &kp FI_S      &kp FI_D     &kp FI_F       &kp FI_G                    &kp LEFT_ARROW                         &kp FI_H      &kp FI_J      &kp FI_K      &kp FI_L    &kp FI_O_UMLAUT &kp FI_A_UMLAUT
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-            &kp LSHFT   &kp FI_Z      &kp FI_X      &kp FI_C     &kp FI_V       &kp FI_B                    &mmv MOVE_RIGHT                        &kp FI_N      &kp FI_M      &kp FI_COMMA  &kp FI_DOT  &kp FI_COLON    &tog 3
+            &kp LSHFT   &kp FI_Z      &kp FI_X      &kp FI_C     &kp FI_V       &kp FI_B                    &kp RIGHT_ARROW                        &kp FI_N      &kp FI_M      &kp FI_COMMA  &kp FI_DOT  &kp FI_COLON    &tog 3
     // ╰───────────────────────────┼─────────────┼─────────────┼─────────────┤─────────────┤─────────────╮                        ╭─────────────├─────────────┼─────────────┼─────────────┼─────────────┼───────────────────────────╯
-            &kp C_MUTE               &kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT  &mo 1          &kp SPACE     &mkp LCLK               &kp ENTER       &mo 1         &mo 2     &kp RIGHT_SHIFT  &kp DELETE,
+            &kp C_MUTE               &kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT  &mo 1          &kp SPACE     &kp ENTER               &kp ENTER       &mo 1         &mo 2     &kp RIGHT_SHIFT  &kp DELETE,
     //                             ╰─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯                        ╰─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯
     &scroll_encoder
 )
 
 ZMK_LAYER(symb,
     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                                    ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             ___         &kp F1         &kp F2        &kp F3        &kp F4       &kp F5                     &kp UP_ARROW                             &kp F6        &kp F7        &kp F8      &kp F9        &kp F10         ___
+             ___         &kp F1         &kp F2        &kp F3        &kp F4       &kp F5                     &mmv MOVE_UP                             &kp F6        &kp F7        &kp F8      &kp F9        &kp F10         ___
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-             ___        &kp F11      &kp F12        &kp FI_EURO &kp FI_POUND_SIGN ___                       &kp DOWN_ARROW                         &kp FI_LBRC  &kp FI_RBRC    &kp FI_LBKT   &kp FI_RBKT    &kp FI_LT     &kp FI_GT
+             ___        &kp F11      &kp F12        &kp FI_EURO &kp FI_POUND_SIGN ___                       &mmv MOVE_DOWN                         &kp FI_LBRC  &kp FI_RBRC    &kp FI_LBKT   &kp FI_RBKT    &kp FI_LT     &kp FI_GT
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-             ___        &kp FI_ACUTE    &kp FI_GRAVE  &kp FI_UMLAUT  &kp FI_MU  &kp FI_ONE_HALF                &kp LEFT_ARROW                       &kp FI_BSLH   &kp FI_FSLH   &kp FI_LPAR    &kp FI_RPAR   &kp FI_PLUS   &kp FI_EQUAL
+             ___        &kp FI_ACUTE    &kp FI_GRAVE  &kp FI_UMLAUT  &kp FI_MU  &kp FI_ONE_HALF             &mmv MOVE_LEFT                       &kp FI_BSLH   &kp FI_FSLH   &kp FI_LPAR    &kp FI_RPAR   &kp FI_PLUS   &kp FI_EQUAL
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-             ___        &kp FI_SECTION     ___           ___           ___           ___                       &kp RIGHT_ARROW                      &kp FI_PIPE   &kp FI_MINUS  &kp FI_APOS    &kp FI_QMARK  &kp FI_CARET      ___
+             ___        &kp FI_SECTION     ___           ___           ___           ___                    &mmv MOVE_RIGHT                      &kp FI_PIPE   &kp FI_MINUS  &kp FI_APOS    &kp FI_QMARK  &kp FI_CARET      ___
     // ╰───────────────────────────┼─────────────┼─────────────┼─────────────┤─────────────┤─────────────╮                        ╭─────────────├─────────────┼─────────────┼─────────────┼─────────────┼───────────────────────────╯
-            &kp C_MUTE                  ___           ___            ___           ___          ___         &kp ENTER                    ___            ___    &kp FI_UNDER    &kp FI_AT    &kp FI_TILDE,
+            &kp C_MUTE                  ___           ___            ___           ___          ___         &mkp LCLK                    ___            ___    &kp FI_UNDER    &kp FI_AT    &kp FI_TILDE,
     //                             ╰─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯                        ╰─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯
     &inc_dec_kp C_VOLUME_UP C_VOL_DN
 )
 
 ZMK_LAYER(ctrl,
     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                                    ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &kp TILDE      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3   &bt BT_SEL 4                 &kp UP_ARROW                               &kp F6       &kp F7      &kp F8       &kp F9          &kp F10         ___
+        &kp TILDE      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3   &bt BT_SEL 4                     ___                                 &kp F6       &kp F7      &kp F8       &kp F9          &kp F10         ___
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-           ___         &bt BT_CLR    &bt BT_CLR_ALL     ___           ___           ___                     &kp DOWN_ARROW                             ___             ___       &kp F11       &kp F12    &kp UNDER    &kp PLUS
+           ___         &bt BT_CLR    &bt BT_CLR_ALL     ___           ___           ___                         ___                                    ___             ___       &kp F11       &kp F12    &kp UNDER    &kp PLUS
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-           ___         &out OUT_USB  &out OUT_BLE       ___           ___           ___                     &kp LEFT_ARROW                             ___             ___         ___         ___           &kp LBRC     &kp RBRC
+           ___         &out OUT_USB  &out OUT_BLE       ___           ___           ___                         ___                                    ___             ___         ___         ___           &kp LBRC     &kp RBRC
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-           ___          &sys_reset       ___          &bootloader      ___           ___                    &kp RIGHT_ARROW                             ___            ___      &sys_reset  &soft_off       &bootloader        ___
+           ___          &sys_reset       ___          &bootloader      ___           ___                        ___                                    ___            ___      &sys_reset  &soft_off       &bootloader        ___
     // ╰───────────────────────────┼─────────────┼─────────────┼─────────────┤─────────────┤─────────────╮                        ╭─────────────├─────────────┼─────────────┼─────────────┼─────────────┼───────────────────────────╯
-               ___                         ___           ___             ___           ___           ___    &kp ENTER                      ___         ___          ___            ___          ___,
+               ___                         ___           ___             ___           ___           ___        ___                      ___         ___          ___            ___          ___,
     //                             ╰─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯                        ╰─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯
     &inc_dec_kp C_VOLUME_UP C_VOL_DN
 )
 
 ZMK_LAYER(game,
     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                                    ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &kp TILDE      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3   &bt BT_SEL 4                 &kp UP_ARROW                               &kp F6       &kp F7      &kp F8       &kp F9          &kp F10         ___
+            &kp ESC     &kp N1        &kp N2        &kp N3       &kp N4         &kp N5                      &kp UP_ARROW                            &kp N6         &kp N7       &kp N8        &kp N9        &kp N0     &kp BACKSPACE
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-           ___         &bt BT_CLR    &bt BT_CLR_ALL     ___           ___           ___                     &kp DOWN_ARROW                             ___             ___       &kp F11       &kp F12    &kp UNDER    &kp PLUS
+            &kp FI_T    &kp TAB       &kp FI_Q      &kp FI_W      &kp FI_E     &kp FI_R                     &kp DOWN_ARROW                         &kp FI_Y      &kp FI_U      &kp FI_I      &kp FI_O      &kp FI_P     &kp FI_A_RING
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-           ___         &out OUT_USB  &out OUT_BLE       ___           ___           ___                     &kp LEFT_ARROW                             ___             ___         ___         ___           &kp LBRC     &kp RBRC
+            &kp FI_G   &kp LSHFT      &kp FI_A      &kp FI_S      &kp FI_D     &kp FI_F                     &kp LEFT_ARROW                         &kp FI_H      &kp FI_J      &kp FI_K      &kp FI_L    &kp FI_O_UMLAUT &kp FI_A_UMLAUT
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-           ___          &sys_reset       ___          &bootloader      ___           ___                    &kp RIGHT_ARROW                             ___            ___      &sys_reset  &soft_off       &bootloader        ___
+            &kp FI_B   &kp LCTRL      &kp FI_Z      &kp FI_X      &kp FI_C     &kp FI_V                     &kp RIGHT_ARROW                        &kp FI_N      &kp FI_M      &kp FI_COMMA  &kp FI_DOT  &kp FI_COLON    ___
     // ╰───────────────────────────┼─────────────┼─────────────┼─────────────┤─────────────┤─────────────╮                        ╭─────────────├─────────────┼─────────────┼─────────────┼─────────────┼───────────────────────────╯
-               ___                         ___           ___             ___           ___           ___    &kp ENTER                      ___         ___          ___            ___          ___,
+            &kp C_MUTE               &kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT  &mo 1          &kp SPACE     &kp ENTER               &kp ENTER       &mo 1         &mo 2     &kp RIGHT_SHIFT  &kp DELETE,
     //                             ╰─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯                        ╰─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯
     &inc_dec_kp C_VOLUME_UP C_VOL_DN
 )
