@@ -209,12 +209,12 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - FI T
   - $$mdi:keyboard-tab$$
   - FI Q
   - FI W
   - FI E
   - FI R
+  - FI T
   - $$mdi:arrow-down-bold$$
   - FI Y
   - FI U
@@ -222,12 +222,12 @@ layers:
   - FI O
   - FI P
   - FI A RING
-  - FI G
   - $$mdi:apple-keyboard-shift$$
   - FI A
   - FI S
   - FI D
   - FI F
+  - FI G
   - $$mdi:arrow-left-bold$$
   - FI H
   - FI J
@@ -235,21 +235,21 @@ layers:
   - FI L
   - FI O UMLAUT
   - FI A UMLAUT
-  - FI B
   - $$mdi:apple-keyboard-control$$
   - FI Z
   - FI X
   - FI C
   - FI V
+  - FI B
   - $$mdi:arrow-right-bold$$
   - FI N
   - FI M
   - FI COMMA
   - FI DOT
   - FI COLON
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: game, h: toggle}
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-caps$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - symb
