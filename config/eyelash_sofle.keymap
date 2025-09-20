@@ -89,13 +89,13 @@ ZMK_LAYER(game,
     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                                    ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
             &kp ESC     &kp N1        &kp N2        &kp N3       &kp N4         &kp N5                      &kp UP_ARROW                            &kp N6         &kp N7       &kp N8        &kp N9        &kp N0     &kp BACKSPACE
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-            &kp FI_T    &kp TAB       &kp FI_Q      &kp FI_W      &kp FI_E     &kp FI_R                     &kp DOWN_ARROW                         &kp FI_Y      &kp FI_U      &kp FI_I      &kp FI_O      &kp FI_P     &kp FI_A_RING
+            &kp TAB     &kp FI_Q      &kp FI_W      &kp FI_E     &kp FI_R       &kp FI_T                    &kp DOWN_ARROW                         &kp FI_Y      &kp FI_U      &kp FI_I      &kp FI_O      &kp FI_P     &kp FI_A_RING
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-            &kp FI_G   &kp LSHFT      &kp FI_A      &kp FI_S      &kp FI_D     &kp FI_F                     &kp LEFT_ARROW                         &kp FI_H      &kp FI_J      &kp FI_K      &kp FI_L    &kp FI_O_UMLAUT &kp FI_A_UMLAUT
+            &kp LSHFT   &kp FI_A      &kp FI_S      &kp FI_D     &kp FI_F       &kp FI_G                    &kp LEFT_ARROW                         &kp FI_H      &kp FI_J      &kp FI_K      &kp FI_L    &kp FI_O_UMLAUT &kp FI_A_UMLAUT
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                                    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
-            &kp FI_B   &kp LCTRL      &kp FI_Z      &kp FI_X      &kp FI_C     &kp FI_V                     &kp RIGHT_ARROW                        &kp FI_N      &kp FI_M      &kp FI_COMMA  &kp FI_DOT  &kp FI_COLON    ___
+            &kp LCTRL   &kp FI_Z      &kp FI_X      &kp FI_C     &kp FI_V       &kp FI_B                    &kp RIGHT_ARROW                        &kp FI_N      &kp FI_M      &kp FI_COMMA  &kp FI_DOT  &kp FI_COLON    &tog 3
     // ╰───────────────────────────┼─────────────┼─────────────┼─────────────┤─────────────┤─────────────╮                        ╭─────────────├─────────────┼─────────────┼─────────────┼─────────────┼───────────────────────────╯
-            &kp C_MUTE               &kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT  &mo 1          &kp SPACE     &kp ENTER               &kp ENTER       &mo 1         &mo 2     &kp RIGHT_SHIFT  &kp DELETE,
+            &kp C_MUTE                 &kp CAPS    &kp LEFT_GUI  &kp LEFT_ALT   &mo 1          &kp SPACE     &kp ENTER               &kp ENTER       &mo 1         &mo 2     &kp RIGHT_SHIFT  &kp DELETE,
     //                             ╰─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯                        ╰─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯
     &inc_dec_kp C_VOLUME_UP C_VOL_DN
 )
